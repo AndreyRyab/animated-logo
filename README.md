@@ -1,3 +1,6 @@
+# Animated Ney Year Logo
+No JS, CSS only. Playing one time in 3 sec after loading.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
