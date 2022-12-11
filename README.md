@@ -1,4 +1,4 @@
-# Animated Ney Year Logo
+# Animated New Year Logo
 No JS, CSS only. Playing one time in 3 sec after loading.
 
 ## Getting Started with Create React App
