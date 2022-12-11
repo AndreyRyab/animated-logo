@@ -1,0 +1,190 @@
+.logo {
+  position: relative;
+  width: 30px;
+  height: 32px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.logo__square {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 17px;
+  width: 13px;
+  height: 13px;
+  background-color: #50287D;
+}
+
+.logo__triangle-first {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #CEDC00;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.logo__triangle-second {
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #CEDC00;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.logo__triangle-third {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #CEDC00;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+@keyframes triangle-first-to-tree {
+  from {
+    top: 0;
+    right: 0;
+  }
+  
+  30% {
+    left: 5px;
+    transform: rotate(180deg);
+  }
+  
+  70% {
+    width: 20px;
+    height: 20px;
+    left: 3px;
+  }
+  
+  to {
+    width: 22px;
+    height: 12px;
+    left: 2px;
+    top: 20px;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes triangle-second-to-tree {
+  from {
+    top: 0;
+    right: 0;
+  }
+  
+  30% {
+    left: 5px;
+    transform: rotate(180deg);
+  }
+  
+  70% {
+    width: 20px;
+    height: 20px;
+    left: 3px;
+  }
+  
+  to {
+    left: 4px;
+    top: 13px;
+    width: 18px;
+    height: 12px;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes triangle-third-to-tree {
+  from {
+    top: 0;
+    right: 0;
+  }
+  
+  30% {
+    left: 5px;
+    transform: rotate(180deg);
+  }
+  
+  70% {
+    width: 20px;
+    height: 20px;
+    left: 3px;
+  }
+  
+  to {
+    left: 6px;
+    top: 5px;
+    width: 14px;
+    height: 12px;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes square-to-star {
+  from {
+    left: 0;
+    top: 17px;
+    width: 13px;
+    height: 13px;
+  }
+
+  30% {
+    left: 8px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-540deg);
+  }
+
+  to {
+    left: 10px;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    transform: rotate(315deg);
+  }
+}
+
+.square-transform {
+  animation-name: square-to-star;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.first-triangle-move {
+  animation-name: triangle-first-to-tree;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.second-triangle-move {
+  animation-name: triangle-second-to-tree;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.third-triangle-move {
+  animation-name: triangle-third-to-tree;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
